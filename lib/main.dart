@@ -10,11 +10,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Layout Demo',
       home: Scaffold(
-          appBar: AppBar(title: Text("Best Layour 3V3r")),
+          appBar: AppBar(title: Text("Meet New Places - Itaim Paulista")),
           body: Column(
             children: <Widget>[
+              ImageSection(),
               TitleSection(),
               ButtonsSection(),
+              TextSection()
             ],
           )),
     );
@@ -77,5 +79,32 @@ class ButtonsSection extends StatelessWidget {
                     color: Colors.blue)))
       ],
     );
+  }
+}
+
+class TextSection extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        padding: EdgeInsets.all(24),
+        child: Text(
+          "Silva Teles Square is a famous plaza located at Itaim Paulista, "
+          "São paulo. People all around the neighborhood visit it to play chess, "
+          "talk, and to watch some rhyme battles.",
+          softWrap: true,
+        ));
+  }
+}
+
+class ImageSection extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        child: Image.asset(
+      "images/silva_teles.jpg",
+      width: 600,
+      height: 240,
+      fit: BoxFit.cover,
+    ));
   }
 }
