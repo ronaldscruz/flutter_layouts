@@ -5,5 +5,5 @@ https://flutter.dev/docs/development/ui/layout/tutorial
 
 ## Description
 
-<p>It was my first project with Flutter. Just a static page about a local square from my neighborhood.</p>
+It was my first project with Flutter. Just a static page about a local square from my neighborhood.<br>
 ![Project screenshot](./repo/screenshot_1.jpeg)
