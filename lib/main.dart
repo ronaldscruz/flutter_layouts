@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Layout Demo',
       home: Scaffold(
           appBar: AppBar(title: Text("Meet New Places - Itaim Paulista")),
-          body: Column(
+          body: ListView(
             children: <Widget>[
               ImageSection(),
               TitleSection(),
